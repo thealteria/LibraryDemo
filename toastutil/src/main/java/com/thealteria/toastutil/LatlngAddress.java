@@ -18,7 +18,8 @@ import static android.content.ContentValues.TAG;
 public class LatlngAddress {
     @SuppressLint("StaticFieldLeak")
 
-    private void currentAddress(final Context context, LatLng latLng, final AutoCompleteTextView location) throws IOException {
+    public static void currentAddress(final Context context, LatLng latLng, final AutoCompleteTextView location)
+            throws IOException {
         Geocoder geocoder = new Geocoder(context, Locale.getDefault());
         List<Address> address;
 
